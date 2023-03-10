@@ -39,6 +39,9 @@ export class ImageGallery extends Component {
             status: Status.IDLE,
           });
           toast.error('No results were found for your request');
+          this.setState({
+            isMore: false,
+          });
           return;
         }
 
